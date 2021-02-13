@@ -1,0 +1,67 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+
+h1 {
+  color: var(--white-text);
+  font-size: 44px;
+  line-height: 1.36;
+  font-weight: 900;
+}
+
+.fon-hero {
+  background-color: var(--grey-fone);
+}
+
+.hero-button {
+  font-family: inherit;
+  background-color: var(--blu-text);
+}
+
+.button-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--white-text);
+}
+
+.list-advantages .advantages {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.list-advantages .list-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--grey-text);
+}
+
+.title {
+  font-weight: 700;
+  line-height: 1.16;
+  color: var(--black-text);
+  font-size: 36px;
+}
+
+.title-command .initials {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--black-text);
+}
+
+.title-command .profession {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--grey-text);
+}
+
+/* Стили для геометрии */
+
+.list-advantages,
+.title-img {
+  display: flex;
+}

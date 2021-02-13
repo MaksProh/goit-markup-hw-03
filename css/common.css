@@ -1,0 +1,146 @@
+:root {
+  --white-text: #ffffff;
+  --grey-text: #757575;
+  --black-text: #212121;
+  --blu-text: #2196f3;
+  --grey-fone: #2f303a;
+  --white-transparent-text: rgba(255, 255, 255, 0.6);
+  --bold-black: #000000;
+}
+
+.nav .link {
+  font-weight: 500;
+  color: var(--black-text);
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.nav .link:hover,
+.nav .link:focus {
+  color: var(--blu-text);
+}
+
+.webstudio {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--bold-black);
+}
+
+.web {
+  color: var(--blu-text);
+}
+
+.studio {
+  color: var(--white-text);
+}
+
+.addres {
+  color: var(--white-text);
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.contacts-nav .mail:hover,
+.contacts-nav .mail:focus,
+.contacts-footer .mail:hover,
+.contacts-footer .mail:focus {
+  color: var(--blu-text);
+}
+
+.contacts-nav .pfone:hover,
+.contacts-nav .pfone:focus,
+.contacts-footer .pfone:hover,
+.contacts-footer .pfone:focus {
+  color: var(--blu-text);
+}
+
+.contacts-footer .addres:hover,
+.contacts-footer .addres:focus {
+  color: var(--blu-text);
+}
+
+.contacts-nav .mail {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--grey-text);
+}
+
+.contacts-nav .pfone {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--grey-text);
+}
+
+.contacts-footer .mail,
+.pfone {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--white-transparent-text);
+}
+
+.fon-footer {
+  background-color: var(--grey-fone);
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+}
+
+.link,
+.webstudio,
+.mail,
+.pfone,
+.addres {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Стили для геометрии общие */
+
+.container {
+  width: 1230px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+}
+
+.nav,
+.nav-link,
+.contacts-nav,
+.contacts-footer {
+  display: flex;
+}
+
+.nav-link,
+.contacts-nav,
+h1,
+h3,
+p,
+h2 {
+  margin: 0;
+}
+
+.hero-button {
+  margin: 0;
+}

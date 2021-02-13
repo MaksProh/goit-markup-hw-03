@@ -1,0 +1,31 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.filtr .button {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--black-text);
+}
+
+.button:hover,
+.button:focus {
+  color: var(--white-text);
+  background-color: var(--blu-text);
+}
+
+.project .title {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--black-text);
+}
+
+.project .industry {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--grey-text);
+}
+
+.button {
+  font-family: inherit;
+}
