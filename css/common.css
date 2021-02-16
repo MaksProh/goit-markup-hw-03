@@ -6,9 +6,14 @@
   --grey-fone: #2f303a;
   --white-transparent-text: rgba(255, 255, 255, 0.6);
   --bold-black: #000000;
+  --background-btn: #f5f4fa;
 }
 
 .nav .link {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   color: var(--black-text);
   font-size: 14px;
@@ -20,7 +25,8 @@
   color: var(--blu-text);
 }
 
-.webstudio {
+.webstudio-nav,
+.webstudio-footer {
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -62,6 +68,10 @@
 }
 
 .contacts-nav .mail {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 0;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -69,6 +79,9 @@
 }
 
 .contacts-nav .pfone {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   color: var(--grey-text);
@@ -83,6 +96,7 @@
 }
 
 .fon-footer {
+  min-height: 252px;
   background-color: var(--grey-fone);
 }
 
@@ -95,7 +109,8 @@ button {
 }
 
 .link,
-.webstudio,
+.webstudio-nav,
+.webstudio-footer,
 .mail,
 .pfone,
 .addres {
@@ -118,23 +133,64 @@ button {
 /* Стили для геометрии общие */
 
 .container {
-  width: 1230px;
+  width: 1170px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+  outline: 1px solid tomato;
 }
 
-.nav,
-.nav-link,
-.contacts-nav,
-.contacts-footer {
+.container-nav {
   display: flex;
 }
 
-.nav-link,
-.contacts-nav,
-.contacts-footer,
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.contacts-nav {
+  margin-left: auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.webstudio-nav {
+  margin-right: 93px;
+}
+
+.webstudio-footer {
+  display: inline-block;
+  margin-left: 0;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.contacts-footer {
+  padding: 0;
+  margin: 0;
+}
+
+.contacts-nav .item + .item {
+  margin-left: 50px;
+}
+
+.contacts-footer .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 h1,
 h3,
 p,
